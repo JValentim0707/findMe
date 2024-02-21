@@ -8,6 +8,8 @@
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@mdi/font": "7.0.96",
     "roboto-fontface": "*",
     "sass": "^1.70.0",

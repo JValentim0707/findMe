@@ -2,7 +2,7 @@
   <v-container class="fill-height home-container">
     <v-responsive class="align-center text-center fill-height">
       <v-img height="300" src="@/assets/template.jpg" />
-      <div class="text-home">Future Login Page</div>
+      <div class="text-home">Future Login Page <v-icon icon="mdi-home" color="#295477" size="40"></v-icon></div>
       <div class="button-container">
         <CustomButton text="Login User" @onClick="$router.push('/userDashboard')"/>
         <CustomButton text="Login Admin" @onClick="$router.push('/adminDashboard')"/>

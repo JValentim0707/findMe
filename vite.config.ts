@@ -41,6 +41,13 @@ export default defineConfig({
       '.vue',
     ],
   },
+  css: {
+    preprocessorOptions: {
+        scss: {
+            additionalData: `@import "@/assets/scss/main.scss";`,
+        },
+    },
+  },
   server: {
     port: 8080,
   },

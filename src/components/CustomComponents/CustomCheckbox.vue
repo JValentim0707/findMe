@@ -1,16 +1,15 @@
 <template>
-  <v-btn @click="onClick" :width="width">{{ text }}</v-btn>
+  <v-checkbox class="text-secundary-font custom-checkbox" :label="label"></v-checkbox>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'CustomButton',
+  name: 'CustomCheckBox',
 
   props: {
-    text: String,
-    width: String,
+    label: { type: String, required: true },
     msg: { type: String, required: true }
   },
 
@@ -18,7 +17,7 @@ export default defineComponent({
   },
 
   setup(props) {
-    props.text // type: string | undefined
+    props.label // type: string | undefined
   },
 
   data() {
@@ -36,4 +35,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.custom-checkbox {
+  color: #7e7e7e;
+  font-size: 14px;
+  i {
+    color: #7e7e7e;
+  }
+}
 </style>

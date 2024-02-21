@@ -17,7 +17,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../pages/HomePage.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../pages/LoginPage.vue')
   },
   {
     path: '/adminDashboard',
